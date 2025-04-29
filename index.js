@@ -44,4 +44,7 @@ app.get("/api/menu", async (req, res) => {
   }
 });
 
+app.use("/", (req, res) => {
+  res.send("Welcome to Food Ordering App");
+});
 app.listen(port, () => console.log(`Proxy server running on port ${port}`));
